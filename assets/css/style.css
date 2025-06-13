@@ -100,7 +100,7 @@ h6 {
 }
 
 #header h2 span {
-  color: #ffc107;
+  color: #ff0000;
   border-bottom: 2px solid #1c7d32;
   padding-bottom: 6px;
 }
@@ -186,7 +186,7 @@ h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #9e7f25;
+  background-color: #ff0000;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;

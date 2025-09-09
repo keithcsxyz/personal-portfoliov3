@@ -33,7 +33,15 @@ body::before {
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 10000;
+  pointer-events: auto;
+}
+
+/* Ensure all clickable elements receive pointer events */
+a, button, input, textarea, select, .nav-menu, .social-links, 
+.portfolio-links, .info-box, .icon-box, .portfolio-wrap,
+[data-filter], .venobox {
+  pointer-events: auto !important;
 }
 
 @media (min-width: 1024px) {
@@ -71,6 +79,19 @@ h6 {
   align-items: center;
   z-index: 997;
   overflow-y: auto;
+  pointer-events: none;
+}
+
+#header .container {
+  pointer-events: auto;
+}
+
+#header .nav-menu {
+  pointer-events: auto;
+}
+
+#header .social-links {
+  pointer-events: auto;
 }
 
 #header * {
@@ -342,6 +363,7 @@ section {
   bottom: 100%;
   opacity: 0;
   z-index: 2;
+  pointer-events: none;
 }
 
 section.section-show {
@@ -349,11 +371,13 @@ section.section-show {
   bottom: auto;
   opacity: 1;
   padding-bottom: 0px;
+  pointer-events: none;
 }
 
 section .container {
   background: rgba(0, 0, 0, 0);
   padding: 30px;
+  pointer-events: auto;
 }
 
 @media (max-width: 768px) {
